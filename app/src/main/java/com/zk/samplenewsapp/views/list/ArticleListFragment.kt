@@ -17,7 +17,6 @@ import com.zk.samplenewsapp.model.Article
 import com.zk.samplenewsapp.model.Event
 import com.zk.samplenewsapp.model.ListViewState
 import com.zk.samplenewsapp.viewModel.MainViewModel
-import kotlinx.android.synthetic.main.fragment_article_list.*
 import org.koin.androidx.viewmodel.ext.android.sharedViewModel
 
 
@@ -70,7 +69,7 @@ class ArticleListFragment : Fragment(), SwipeRefreshLayout.OnRefreshListener, On
 
 	private fun render(state: ListViewState) {
 		articlesAdapter.update(state.adapterList)
-		swiperefresh.isRefreshing = false
+//		swiperefresh.isRefreshing = false
 	}
 
 	override fun onRefresh() {

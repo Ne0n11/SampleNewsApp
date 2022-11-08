@@ -21,6 +21,7 @@ class MainViewModel(private val repository: Repository) : ViewModel() {
 		when(event) {
 			is Event.ScreenLoad, Event.SwipeToRefreshEvent -> getNewsFromApi()
 			is Event.ListItemClicked -> viewAction.postValue(ViewEffect.TransitionToScreen(event.item))
+			else -> {}
 		}
 	}
 

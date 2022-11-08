@@ -43,6 +43,7 @@ class ArticleViewModel : ViewModel() {
             is Event.AddToFavouritesClicked -> viewAction.postValue(ViewEffect.ShowSnackBar(
                 R.string.button_result_text
             ))
+            else -> {}
         }
     }
 }

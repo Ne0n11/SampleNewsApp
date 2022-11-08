@@ -83,6 +83,7 @@ class ArticleFragment : Fragment() {
                 Snackbar.make(binding.coordinator, getString(effect.messageResource), Snackbar.LENGTH_LONG)
                     .show()
             }
+            else -> {}
         }
     }
 }

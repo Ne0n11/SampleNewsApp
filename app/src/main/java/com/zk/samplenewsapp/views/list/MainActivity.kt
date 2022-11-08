@@ -37,6 +37,7 @@ class MainActivity : AppCompatActivity() {
                 intent.putExtra(getString(R.string.extra_item), effect.article)
                 startActivity(intent)
             }
+            else -> {}
         }
     }
 }
